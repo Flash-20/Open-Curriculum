@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html class="html1" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="icon-modified.png" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <title>EduHub</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body class="body1">
+    <header class="header1">
+      <img src="icon-modified.png" style="height: 80px" />
+      <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#curricula">Curricula</a></li>
+        <li><a href="#saved">Saved</a></li>
+        <li><a href="#contribute">Contribute</a></li>
+      </ul>
+    </header>
+
+    <section class="box section1">
+      <div class="index1">
+        <h1 class="main-text">Transforming Education</h1>
+        <h3 class="sub-text">Standardized Curricula For The World</h3>
+        <a href="#features" style="z-index: 999" class="boxBtn boxBtn1">explore</a>
+      </div>
+      <div class="vidOverlay">
+        <video class="video1" src="4.mp4" autoplay muted loop></video>
+      </div>
+    </section>
+    <section class="section1">
+      <h1 class="cont-headline">
+        Our content have touched <br />
+        the lives of millions
+      </h1>
+      <div class="container counter text-white">
+        <div class="row text-center my-5">
+          <div class="col cont">
+            <span class="span1" id="contriNum"></span><br />Contributors
+          </div>
+          <div class="col cont">
+            <span class="span1" id="syllabusNum"></span><br />Syllabus
+          </div>
+          <div class="col cont">
+            <span class="span1" id="universityNum"></span><br />Universities
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <h1 class="cont-headline">
+      Eduhub Vision
+    </h1>
+    <div>
+      <iframe width="1024" height="576" src="https://www.youtube.com/embed/jr7zjN0dQ6I"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="ytvideo"></iframe>
+    </div>
+
+    <div id="features" class="container my-5">
+      <h1 class="cont-headline">Our Features</h1>
+      <div class="row d-flex justify-content-center">
+        <div class="col my-3">
+          <div class="card-container mx-auto card-container1">
+            <div class="card card-front card1">
+              <img
+                src="data:image/png;base64,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"
+                class="rounded mx-auto d-block mt-4"
+                style="height: 50px"
+              />
+              <h5 class="card-title text-center pt-3 my-5">Technology</h5>
+              <p class="card-text">
+                We believe that scalable, sustainable, personalized quality
+                education for students by leveraging technology.
+              </p>
+              <i class="bi bi-arrow-right arrow"></i>
+            </div>
+            <div class="card card-back bg-dark text-white card1">
+              <p class="card-text my-auto">
+                It reduces educational cost. <br />
+                We ensure that user interface are simple enough so that everyone
+                can use innovative tools. <br />
+                It provides access to an unlimited amount of current information
+                and varity of data to the learners.
+              </p>
+              <i class="bi bi-arrow-left"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col my-3">
+          <div class="card-container mx-auto card-container1">
+            <div class="card card-front card1">
+              <i
+                class="bi bi-pencil-square"
+                style="text-align: center; font-size: 60px"
+              ></i>
+              <h5 class="card-title text-center my-5">Content</h5>
+              <p class="card-text">
+                It is our attempt to make learning a joyful and meaningful
+                experience. <br />
+                We understand the true of content.
+              </p>
+              <i class="bi bi-arrow-right arrow"></i>
+            </div>
+            <div class="card card-back bg-dark text-white card1">
+              <p class="card-text my-auto">
+                Through this application, we are offering high quality
+                information in different fields of education domain. <br />
+                The aim is to give latest updates according to changing
+                education curriculum.<br />
+                We will display the trending courses according to the need of
+                industrial expectations by analysing the data.
+              </p>
+              <i class="bi bi-arrow-left"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col my-3">
+          <div class="card-container mx-auto card-container1">
+            <div class="card card-front card1">
+              <i
+                class="bi bi-bullseye"
+                style="text-align: center; font-size: 60px"
+              ></i>
+              <h5 class="card-title text-center my-5">Aim & Objectives</h5>
+              <p class="card-text">
+                To introduce valid and reliable content to the curriculum.
+                <br />
+                Cunduct correlational studies to gain better insite into
+                learning design and predict positive learning outcomes.
+              </p>
+              <i class="bi bi-arrow-right arrow"></i>
+            </div>
+            <div class="card card-back bg-dark text-white card1">
+              <p class="card-text my-auto">
+                Undertake case studies to find why collages to choose a
+                perticular curriculum and how will it help to get a job. <br />
+                Get experts advice, pofessor's vote for specific contribution.
+                <br />
+                We will make learning easy by categorzing topics into blooms
+                level and provide proper resources.
+              </p>
+              <i class="bi bi-arrow-left"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col my-3">
+          <div class="card-container mx-auto card-container1">
+            <div class="card card-front card1">
+              <img
+                src="https://icon-library.com/images/faq-icon-white/faq-icon-white-29.jpg"
+                class="rounded mx-auto d-block"
+                style="width: 85px"
+              />
+              <h5 class="card-title text-center my-5">FAQ</h5>
+              <p class="card-text">
+                Feel free to ask your questions, we will never let your
+                questions unasnwered.
+              </p>
+              <i class="bi bi-arrow-right arrow"></i>
+            </div>
+            <div class="card card-back bg-dark text-white card1">
+              <p class="card-text my-auto">
+                <!-- add text -->
+              </p>
+              <i class="bi bi-arrow-left"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section1">
+      <h1 class="cont-headline">
+        Our constructive approach <br />
+        to learning
+      </h1>
+      <div>
+        <span class="exploreContainer span1">
+          <i class="bi bi-globe2 explore"></i> &nbsp;
+          <h1 class="icon-text" style="text-align: center">Explore</h1>
+        </span>
+        <p style="text-align: center">
+          Learners actively explore their environment and expiriment with
+          materials to identify and devlop skills.
+        </p>
+      </div>
+      <div>
+        <span class="exploreContainer span1">
+          <i class="bi bi-flower2 explore"></i> &nbsp;
+          <h1 class="icon-text" style="text-align: center">Engage</h1>
+        </span>
+        <p style="text-align: center">
+          Learners engage in the process of acquiring skills and concepts by
+          contributing rich content.
+        </p>
+      </div>
+      <div>
+        <span class="exploreContainer span1">
+          <i class="bi bi-lightbulb-fill explore"></i> &nbsp;
+          <h1 class="icon-text" style="text-align: center">Elaborate</h1>
+        </span>
+        <p style="text-align: center">
+          Through new experiences, learners develop deeper and broader
+          understanding and <br />
+          options information on their areas of interests and refine their
+          skills.
+        </p>
+      </div>
+    </section>
+    <footer class="text-center text-white" style="background-color: #f1f1f1">
+      <!-- Grid container -->
+      <div class="footer1">
+        <!-- Section: Social media -->
+        <section class="flex-row justify-content-center section1">
+          <!-- Facebook -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark"
+            href="https://www.facebook.com/"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="bi bi-facebook" style="color: white"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark"
+            href="https://www.twitter.com/"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="bi bi-twitter" style="color: white"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark"
+            href="https://www.google.com/search?q=eduhub&rlz=1C1CHBD_enIN981IN981&sxsrf=APq-WBuHcIH6sMuHLoFweQ8pZknlGQvWOQ%3A1648537147414&ei=O65CYsX1GOTXz7sPp_SLOA&ved=0ahUKEwiF_8e43-r2AhXk63MBHSf6AgcQ4dUDCA4&uact=5&oq=eduhub&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgcIABCxAxBDMgsILhCABBDHARCvATIFCAAQgAQyBQgAEIAEMgsILhCABBDHARDRAzILCC4QgAQQxwEQrwEyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgjECc6EQguEIAEELEDEIMBEMcBEKMCOgsIABCABBCxAxCDAToKCC4QxwEQ0QMQQzoECAAQQzoICAAQsQMQgwE6BwguENQCEEM6CgguEMcBEK8BEEM6CAgAEIAEELEDSgQIQRgASgQIRhgAUABY7wtg7xZoAHABeACAAaQHiAH9EpIBCzAuMi4yLjUtMS4xmAEAoAEBwAEB&sclient=gws-wiz"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="bi bi-google" style="color: white"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark"
+            href="https://www.instagram.com/"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="bi bi-instagram" style="color: white"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark"
+            href="https://www.linkedin.com/"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="bi bi-linkedin" style="color: white"></i
+          ></a>
+          <!-- Github -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark"
+            href="https://www.github.com/"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="bi bi-github" style="color: white"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center footerUlt"
+        style="background-color: rgba(0, 0, 0); color: white"
+      >
+        © 2020 Copyright:
+        <a class="text-white" href="">Made with Love by Team Default</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const CONTRIBUTORS = 100000;
+      const SYLLABUS = 10000;
+      const UNIVERSITIES = 1000;
+      let i = 0,
+        j = 0,
+        k = 0;
+      const id = setInterval(() => {
+        if (i < CONTRIBUTORS) {
+          document.getElementById("contriNum").innerText = `${(i += 200)}+`;
+        }
+        if (j < SYLLABUS)
+          document.getElementById("syllabusNum").innerText = `${(j += 20)}+`;
+        if (k < UNIVERSITIES)
+          document.getElementById("universityNum").innerText = `${(k += 2)}+`;
+      }, 1);
+    </script>
+  </body>
+</html>
